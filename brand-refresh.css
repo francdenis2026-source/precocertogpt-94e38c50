@@ -1,0 +1,58 @@
+/* PreçoCerto — aplicação segura da nova identidade visual */
+.pc-logo,
+.pc-footer-brand {
+  position: relative;
+}
+
+.pc-logo > img,
+.pc-footer-brand > img {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.pc-logo {
+  width: clamp(142px, 13vw, 182px);
+  min-width: 142px;
+  background: url('/logo-precocerto-wordmark.png') left center / contain no-repeat;
+}
+
+.pc-logo > img {
+  width: 100% !important;
+  height: 42px !important;
+}
+
+.pc-footer-brand {
+  min-width: min(100%, 190px);
+}
+
+.pc-footer-brand::before {
+  content: '';
+  display: block;
+  width: 178px;
+  height: 54px;
+  max-width: 100%;
+  background: url('/logo-precocerto-wordmark.png') left center / contain no-repeat;
+}
+
+.pc-footer-brand > img {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 720px) {
+  .pc-logo {
+    width: 148px;
+    min-width: 148px;
+  }
+
+  .pc-logo > img {
+    height: 38px !important;
+  }
+
+  .pc-footer-brand::before {
+    width: 158px;
+    height: 48px;
+  }
+}

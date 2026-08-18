@@ -1,0 +1,27 @@
+# PreçoCerto
+
+PreçoCerto é uma plataforma local de comparação de preços e marketplace para Feijó, Acre, Brasil.
+
+## Principais áreas públicas
+- https://www.precocerto.live/
+- https://www.precocerto.live/buscar
+- https://www.precocerto.live/explorar
+- https://www.precocerto.live/mercados
+- https://www.precocerto.live/farmacias
+- https://www.precocerto.live/padarias
+- https://www.precocerto.live/livros
+- https://www.precocerto.live/servicos
+- https://www.precocerto.live/estabelecimentos
+- https://www.precocerto.live/lojista
+- https://www.precocerto.live/fale-conosco
+
+## Conteúdo
+A plataforma reúne produtos, preços, catálogos de estabelecimentos, páginas de setores e áreas editoriais locais. Produtos e estabelecimentos podem ter páginas próprias.
+
+## Regras de interpretação
+- Preços podem mudar e devem ser tratados como informações temporais.
+- Algumas páginas de estabelecimentos funcionam apenas como catálogo e não representam canal oficial de venda do comerciante.
+- Áreas administrativas, conta do usuário, favoritos, cesta e pedidos são privadas e não devem ser indexadas.
+
+## Sitemap
+https://www.precocerto.live/sitemap.xml

@@ -1,0 +1,45 @@
+{
+  "name": "PreçoCerto | Marketplace Local",
+  "short_name": "PreçoCerto",
+  "description": "Economia real em Feijó — Compare preços e compre online.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05264A",
+  "theme_color": "#05264A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-premium-v3.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Marketplace Local PreçoCerto"
+    }
+  ]
+}

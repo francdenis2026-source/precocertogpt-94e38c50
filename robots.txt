@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /painel-lojista/
+Disallow: /minha-conta
+Disallow: /meus-pedidos
+Disallow: /favoritos
+Disallow: /cesta
+Disallow: /cesta-basica
+Disallow: /login
+Disallow: /cadastro
+Disallow: /registrar
+Disallow: /integracoes/
+
+Sitemap: https://www.precocerto.live/sitemap.xml
