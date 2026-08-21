@@ -22,7 +22,7 @@
 .pc-home .pc-dialog-offers>div,.pc-home .pc-dialog-offers>div:hover,.pc-home .pc-dialog-offers>div:focus-within{transform:none!important;box-sizing:border-box}
 .pc-home .pc-dialog-offers>div{transition:background-color 150ms ease,border-color 150ms ease}
 .pc-modal-store-link{display:inline;cursor:pointer;color:var(--pc-color-primary)!important;text-decoration-line:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:3px;border-radius:4px;transition:color 150ms ease,text-decoration-color 150ms ease,background-color 150ms ease;outline:none}
-.pc-modal-store-link:hover{color:var(--pc-color-primary)!important;text-decoration-color:currentColor}
+@media(hover:hover) and (pointer:fine){.pc-modal-store-link:hover{color:var(--pc-color-primary)!important;text-decoration-color:currentColor}}
 .pc-modal-store-link:focus-visible{color:var(--pc-color-primary)!important;text-decoration-color:currentColor;outline:2px solid rgba(100,37,100,.34);outline-offset:3px}
 .pc-home .pc-dialog-actions{position:relative;z-index:3}
 .pc-home .pc-dialog-actions a,.pc-home .pc-dialog-actions button{pointer-events:auto}

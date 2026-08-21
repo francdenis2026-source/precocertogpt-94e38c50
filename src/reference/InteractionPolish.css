@@ -10,18 +10,18 @@
 .ref-price-row:active{transform:scale(.995)}
 
 @media(hover:hover) and (pointer:fine){
-  .ref-search button:hover,.ref-economy__grid>div>a:hover,.ref-signin:hover,.ref-auth__submit:hover:not(:disabled){transform:translateY(-1px)}
-  .ref-price-row:hover{transform:translateX(2px)}
-  .ref-price-row:hover>svg,.ref-section__heading>a:hover svg,.ref-search button:hover svg,.ref-live-card>button:hover svg,.ref-economy__grid>div>a:hover svg,.ref-local__actions a:hover>svg:last-child{transform:translateX(3px)}
-  .ref-live-card:hover,.ref-catalog-card:hover,.ref-store-card:hover{transform:translateY(-2px)}
-  .ref-receipt:hover{transform:rotate(0) translateY(-2px)}
-  .ref-filter-row button:hover{transform:translateY(-1px)}
-  .ref-catalog-card:hover .ref-result-product>i img{transform:scale(1.035)}
-  .ref-catalog-card:hover>svg{opacity:1;transform:translateX(0)}
-  .ref-store-card:hover .ref-store-card__select>svg{transform:translateX(1px)}
+  @media(hover:hover) and (pointer:fine){.ref-search button:hover,.ref-economy__grid>div>a:hover,.ref-signin:hover,.ref-auth__submit:hover:not(:disabled){transform:translateY(-1px)}}
+  @media(hover:hover) and (pointer:fine){.ref-price-row:hover{transform:translateX(2px)}}
+  @media(hover:hover) and (pointer:fine){.ref-price-row:hover>svg,.ref-section__heading>a:hover svg,.ref-search button:hover svg,.ref-live-card>button:hover svg,.ref-economy__grid>div>a:hover svg,.ref-local__actions a:hover>svg:last-child{transform:translateX(3px)}}
+  @media(hover:hover) and (pointer:fine){.ref-live-card:hover,.ref-catalog-card:hover,.ref-store-card:hover{transform:translateY(-2px)}}
+  @media(hover:hover) and (pointer:fine){.ref-receipt:hover{transform:rotate(0) translateY(-2px)}}
+  @media(hover:hover) and (pointer:fine){.ref-filter-row button:hover{transform:translateY(-1px)}}
+  @media(hover:hover) and (pointer:fine){.ref-catalog-card:hover .ref-result-product>i img{transform:scale(1.035)}}
+  @media(hover:hover) and (pointer:fine){.ref-catalog-card:hover>svg{opacity:1;transform:translateX(0)}}
+  @media(hover:hover) and (pointer:fine){.ref-store-card:hover .ref-store-card__select>svg{transform:translateX(1px)}}
 }
 
-@media(hover:none){.ref-price-row:hover,.ref-live-card:hover,.ref-catalog-card:hover,.ref-store-card:hover{transform:none}}
+@media(hover:none){@media(hover:hover) and (pointer:fine){.ref-price-row:hover,.ref-live-card:hover,.ref-catalog-card:hover,.ref-store-card:hover{transform:none}}}
 
 @media(prefers-reduced-motion:reduce){
   .ref-page *,.ref-auth *,.ref-admin *{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}

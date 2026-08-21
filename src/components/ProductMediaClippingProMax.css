@@ -56,9 +56,9 @@
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .true-home .th-product:hover .th-product__media img {
+  @media(hover:hover) and (pointer:fine){.true-home .th-product:hover .th-product__media img {
     transform: scale(1.035);
-  }
+  }}
 }
 
 @media (max-width:640px) {

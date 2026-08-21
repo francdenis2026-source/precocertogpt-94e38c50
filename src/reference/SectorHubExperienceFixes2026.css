@@ -1,7 +1,7 @@
 /* Explore 2026 — theme, typography and sponsored content refinements. */
 .sector-hub :is(a,h1,h2,h3,strong,small,span,p,em,b){text-decoration:none;text-decoration-line:none;text-decoration-thickness:0;font-synthesis:none}
 .sector-hub{background:var(--pc-canvas);color:var(--pc-ink)}
-.sector-hub__hero-actions--primary{margin-top:24px;gap:9px}.sector-hub__hero-actions--primary a{min-height:42px;padding-inline:14px}.sector-hub__hero-actions--primary a:first-child{background:var(--pc-green);border-color:var(--pc-green);color:#19384f}.sector-hub__hero-actions--primary a:first-child:hover{filter:brightness(1.04)}
+.sector-hub__hero-actions--primary{margin-top:24px;gap:9px}.sector-hub__hero-actions--primary a{min-height:42px;padding-inline:14px}.sector-hub__hero-actions--primary a:first-child{background:var(--pc-green);border-color:var(--pc-green);color:#19384f}@media(hover:hover) and (pointer:fine){.sector-hub__hero-actions--primary a:first-child:hover{filter:brightness(1.04)}}
 
 .sector-hub__section-head span,.sector-hub__tools-copy>span,.sector-hub__stores header span{display:block;color:var(--pc-green-strong);font-family:var(--pc-font-body);font-size:11px;font-weight:800;letter-spacing:.075em;text-transform:none}
 .sector-hub__section-head h2,.sector-hub__tools h2,.sector-hub__stores h2{margin-top:7px;font-family:var(--pc-font-display);font-size:clamp(1.85rem,3vw,2.55rem);font-weight:720;line-height:1.06;letter-spacing:-.025em;text-decoration:none!important}

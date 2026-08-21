@@ -1,5 +1,5 @@
 /* Impeccable global refinement — hierarchy, rhythm, interaction and responsive clarity. */
-:root{--pc-focus:var(--pc-green,#1f7d51);--pc-soft-shadow:var(--pc-shadow-sm,0 10px 30px rgba(12,28,40,.08));--pc-card-radius:var(--pc-radius-card,12px)}
+:root{--pc-focus:var(--pc-green,#1f7d51);--pc-soft-shadow:var(--pc-shadow-sm,0 10px 30px rgba(12, 28, 40,.08));--pc-card-radius:var(--pc-radius-card,12px)}
 :where(a,button,input,select,textarea,[role="button"]):focus-visible{outline:3px solid color-mix(in srgb,var(--pc-focus) 42%,transparent);outline-offset:3px}
 :where(button,a){-webkit-tap-highlight-color:transparent}
 
@@ -15,19 +15,19 @@
 .ref-home .ref-section__heading p,.ref-home .ref-sectors__heading p{max-width:48ch;line-height:1.55}
 .ref-home .ref-price-board{box-shadow:var(--pc-soft-shadow)}
 .ref-home .ref-price-row{transition:transform .16s ease,border-color .16s ease,background .16s ease}
-.ref-home .ref-price-row:hover{transform:translateY(-1px)}
+@media(hover:hover) and (pointer:fine){.ref-home .ref-price-row:hover{transform:translateY(-1px)}}
 .ref-home .ref-price-row img{transition:transform 220ms cubic-bezier(.23,1,.32,1),filter 180ms ease}
-.ref-home .ref-search{box-shadow:0 14px 38px rgba(6,18,27,.16)}
+.ref-home .ref-search{box-shadow:0 14px 38px rgba(6, 18, 27,.16)}
 .ref-home .ref-proof__grid>div{align-content:center}
 .ref-home .ref-economy__grid{align-items:center}
 .ref-home .ref-local__actions a{overflow:hidden}
-@media(hover:hover) and (pointer:fine){.ref-home .ref-price-row:hover img{transform:scale(1.045);filter:contrast(1.03) saturate(1.03)}}
+@media(hover:hover) and (pointer:fine){@media(hover:hover) and (pointer:fine){.ref-home .ref-price-row:hover img{transform:scale(1.045);filter:contrast(1.03) saturate(1.03)}}}
 
 /* Homepage contrast audit — clearer type, stronger surfaces, calmer accents. */
 .ref-home .ref-section__heading p,.ref-home .ref-sectors__heading p,.ref-home .ref-price-name em,.ref-home .ref-price-store em,.ref-home .ref-price-value em{color:color-mix(in srgb,var(--pc-ink) 72%,var(--pc-surface))}
 .ref-home .ref-section__heading>a,.ref-home .ref-sectors__all{color:color-mix(in srgb,var(--pc-gold) 82%,var(--pc-ink));font-weight:800}
 .ref-home .ref-price-board{border:1px solid var(--pc-border-strong)}
-.ref-home .ref-price-row:hover{background:color-mix(in srgb,var(--pc-green-soft) 36%,var(--pc-surface));border-color:color-mix(in srgb,var(--pc-green) 34%,var(--pc-border))}
+@media(hover:hover) and (pointer:fine){.ref-home .ref-price-row:hover{background:color-mix(in srgb,var(--pc-green-soft) 36%,var(--pc-surface));border-color:color-mix(in srgb,var(--pc-green) 34%,var(--pc-border))}}
 .ref-home .ref-price-name strong,.ref-home .ref-price-store strong{color:var(--pc-ink)}
 .ref-home .ref-price-value strong{color:var(--pc-green-strong)}
 .ref-home .ref-proof{background:var(--pc-surface);border-color:var(--pc-border-strong)}
@@ -45,7 +45,7 @@ html[data-theme="dark"] .ref-home .ref-price-value em{color:color-mix(in srgb,#f
 html[data-theme="dark"] .ref-home .ref-section__heading>a,
 html[data-theme="dark"] .ref-home .ref-sectors__all{color:color-mix(in srgb,var(--pc-gold) 88%,#fff)}
 html[data-theme="dark"] .ref-home .ref-price-board{box-shadow:0 18px 54px rgba(0,0,0,.22)}
-html[data-theme="dark"] .ref-home .ref-price-row:hover{background:color-mix(in srgb,var(--pc-green-soft) 48%,var(--pc-surface));border-color:color-mix(in srgb,var(--pc-green) 42%,var(--pc-border))}
+@media(hover:hover) and (pointer:fine){html[data-theme="dark"] .ref-home .ref-price-row:hover{background:color-mix(in srgb,var(--pc-green-soft) 48%,var(--pc-surface));border-color:color-mix(in srgb,var(--pc-green) 42%,var(--pc-border))}}
 html[data-theme="dark"] .ref-home .ref-proof span{color:color-mix(in srgb,#fff 70%,var(--pc-surface))}
 html[data-theme="dark"] .ref-home .ref-search-submit{background:var(--pc-green)!important;color:#19384f!important}
 
@@ -64,7 +64,7 @@ html[data-theme="dark"] .ref-home .ref-search-submit{background:var(--pc-green)!
 .pc-account-hero{border-radius:var(--pc-radius-block,16px);box-shadow:var(--pc-soft-shadow)}
 .pc-account-tools{gap:10px}
 .pc-account-tools>a{min-height:88px;border-radius:var(--pc-radius-card,12px);transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
-.pc-account-tools>a:hover{transform:translateY(-2px);box-shadow:var(--pc-soft-shadow)}
+@media(hover:hover) and (pointer:fine){.pc-account-tools>a:hover{transform:translateY(-2px);box-shadow:var(--pc-soft-shadow)}}
 .pc-account-details{border-radius:var(--pc-radius-card,12px);overflow:hidden}
 html[data-theme="dark"] .pc-account-page{background:var(--pc-canvas,#1e3749)}
 

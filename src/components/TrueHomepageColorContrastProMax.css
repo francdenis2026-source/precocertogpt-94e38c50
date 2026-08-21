@@ -4,7 +4,7 @@
 .true-home .th-brand span{color:#3f273f;border-left-color:rgba(0,0,0,.22)}
 .true-home .th-nav a,.true-home .th-login{color:#3f273f;font-weight:800}
 .true-home .th-button--brand,.true-home .th-search button{background:#af1fb6;color:#551657}
-.true-home .th-button--brand:hover,.true-home .th-search button:hover{background:#be36c4}
+@media(hover:hover) and (pointer:fine){.true-home .th-button--brand:hover,.true-home .th-search button:hover{background:#be36c4}}
 
 .true-home .th-hero{background:#4c194e}
 .true-home .th-hero__image{filter:saturate(1.02) contrast(1.07) brightness(.92);background-position:center 48%}

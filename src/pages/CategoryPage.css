@@ -32,9 +32,9 @@
   transition: background 0.2s;
 }
 
-.back-btn:hover {
+@media(hover:hover) and (pointer:fine){.back-btn:hover {
   background: rgba(117,11,117, 0.05);
-}
+}}
 
 .category-search {
   position: relative;
@@ -136,11 +136,11 @@
   color: var(--pc-color-surface);
 }
 
-.btn:hover {
+@media(hover:hover) and (pointer:fine){.btn:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+}}
 
 .category-section {
   background: var(--pc-color-surface);

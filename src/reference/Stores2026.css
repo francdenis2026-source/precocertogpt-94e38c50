@@ -51,7 +51,7 @@ html:has(.ref-stores-page)::-webkit-scrollbar,body:has(.ref-stores-page)::-webki
 .ref-stores-more span{color:var(--pc-muted);font-size:var(--pc-text-xs)}
 
 @media(hover:hover) and (pointer:fine){
-  .ref-store-card:hover{border-color:color-mix(in srgb,var(--pc-green) 45%,var(--pc-border));box-shadow:var(--pc-shadow-sm)}
+  @media(hover:hover) and (pointer:fine){.ref-store-card:hover{border-color:color-mix(in srgb,var(--pc-green) 45%,var(--pc-border));box-shadow:var(--pc-shadow-sm)}}
   .ref-store-card>:is(button,footer button,footer a):hover{background:var(--pc-green-soft)}
 }
 

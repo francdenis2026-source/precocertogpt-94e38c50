@@ -62,7 +62,7 @@
 .pcn-brand__word small { position: absolute; left: 0; top: 24px; color: var(--pcn-amber); font-size: .62rem; letter-spacing: .01em; font-weight: 800; }
 .pcn-nav { display: flex; align-items: center; gap: 24px; margin-left: auto; }
 .pcn-nav a { min-height: 44px; display: inline-flex; align-items: center; color: rgba(255,255,255,.78); font-size: .82rem; font-weight: 700; }
-.pcn-nav a:hover { color: #fff; }
+@media(hover:hover) and (pointer:fine){.pcn-nav a:hover { color: #fff; }}
 .pcn-actions { display: flex; align-items: center; gap: 8px; }
 .pcn-icon-link,.pcn-theme,.pcn-menu {
   width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.18);
@@ -163,7 +163,7 @@
 
 .pcn-stores { display: grid; grid-template-columns: repeat(6,1fr); gap: 14px; }
 .pcn-store { min-height: 170px; display: flex; flex-direction: column; align-items: flex-start; padding: 18px; border: 1px solid var(--pcn-line); border-radius: 18px; background: color-mix(in srgb,var(--pcn-paper) 94%,transparent); box-shadow: 0 10px 30px rgba(57,24,56,.06); transition: transform 170ms ease,border-color 170ms ease,box-shadow 170ms ease; }
-.pcn-store:hover { transform: translateY(-3px); border-color: rgba(109,74,255,.28); box-shadow: var(--pcn-shadow); }
+@media(hover:hover) and (pointer:fine){.pcn-store:hover { transform: translateY(-3px); border-color: rgba(109,74,255,.28); box-shadow: var(--pcn-shadow); }}
 .pcn-store__mark { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 14px; color: #fff; font-weight: 900; box-shadow: 0 8px 24px rgba(54,21,53,.16); }
 .pcn-store strong { margin-top: 16px; font-size: .93rem; }
 .pcn-store small { margin-top: 3px; color: var(--pcn-muted); font-size: .73rem; }

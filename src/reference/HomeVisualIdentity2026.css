@@ -23,16 +23,16 @@
 /* Light mode: show the photography instead of washing it out. */
 html[data-theme="light"] .ref-home .ref-hero::before{
   background:
-    linear-gradient(90deg,rgba(10,26,38,.93) 0%,rgba(10,26,38,.82) 33%,rgba(10,26,38,.42) 62%,rgba(10,26,38,.08) 100%),
+    linear-gradient(90deg,rgba(10, 26, 38,.93) 0%,rgba(10, 26, 38,.82) 33%,rgba(10, 26, 38,.42) 62%,rgba(10, 26, 38,.08) 100%),
     url('/hero-precocerto-editorial-2026.jpg') 78% 46%/cover no-repeat;
   filter:saturate(1.12) contrast(1.1) brightness(1.04);
 }
-html[data-theme="light"] .ref-home .ref-hero::after{background:linear-gradient(180deg,transparent,rgba(10,26,38,.58))}
+html[data-theme="light"] .ref-home .ref-hero::after{background:linear-gradient(180deg,transparent,rgba(10, 26, 38,.58))}
 
 @media(max-width:680px){
   .ref-home .ref-hero::before{
     background:
-      linear-gradient(180deg,rgba(10,26,38,.48) 0%,rgba(10,26,38,.78) 54%,rgba(10,26,38,.96) 100%),
+      linear-gradient(180deg,rgba(10, 26, 38,.48) 0%,rgba(10, 26, 38,.78) 54%,rgba(10, 26, 38,.96) 100%),
       url('/hero-precocerto-editorial-2026.jpg') 68% 40%/cover no-repeat;
     filter:saturate(1.08) contrast(1.08) brightness(1.03);
   }

@@ -218,7 +218,7 @@
   font-size: .86rem !important;
   font-weight: 820 !important;
 }
-.pc-home .pc-search button:hover { background: var(--sg-coral-dark) !important; }
+@media(hover:hover) and (pointer:fine){.pc-home .pc-search button:hover { background: var(--sg-coral-dark) !important; }}
 .pc-home .pc-quick { color: rgba(255,255,255,.7) !important; font-size: .78rem !important; }
 .pc-home .pc-quick button {
   min-height: 29px !important;

@@ -102,9 +102,9 @@
   pointer-events: none;
 }
 
-.hero-price-card:hover::before {
+@media(hover:hover) and (pointer:fine){.hero-price-card:hover::before {
   opacity: 1;
-}
+}}
 
 /* ============================================
    PROOF STRIP - 3D Card Grid with Glow
@@ -140,15 +140,15 @@
   pointer-events: none;
 }
 
-.proof-card:hover {
+@media(hover:hover) and (pointer:fine){.proof-card:hover {
   border-color: var(--pc-accent);
   box-shadow: var(--pc-shadow-md), 0 0 20px rgba(212, 122, 61, 0.25);
   transform: translateY(-8px) rotateX(5deg) rotateZ(2deg);
-}
+}}
 
-.proof-card:hover::before {
+@media(hover:hover) and (pointer:fine){.proof-card:hover::before {
   opacity: 1;
-}
+}}
 
 .proof-number {
   font-size: clamp(28px, 5vw, 48px);
@@ -167,10 +167,10 @@
   }
 }
 
-.proof-card:hover .proof-number {
+@media(hover:hover) and (pointer:fine){.proof-card:hover .proof-number {
   animation: glow-pulse 400ms ease-out;
   text-shadow: 0 0 20px rgba(212, 122, 61, 0.4);
-}
+}}
 
 @keyframes glow-pulse {
   0% {
@@ -217,15 +217,15 @@
   transition: transform var(--pc-transition-base);
 }
 
-.sector-card:hover {
+@media(hover:hover) and (pointer:fine){.sector-card:hover {
   border-color: var(--pc-accent);
   box-shadow: 0 0 16px rgba(212, 122, 61, 0.3);
   transform: rotateX(-8deg) rotateY(8deg) translateZ(20px);
-}
+}}
 
-.sector-card:hover .sector-card-inner {
+@media(hover:hover) and (pointer:fine){.sector-card:hover .sector-card-inner {
   transform: translateZ(30px);
-}
+}}
 
 .sector-icon {
   font-size: 32px;
@@ -235,10 +235,10 @@
   filter: drop-shadow(0 0 0px rgba(212, 122, 61, 0));
 }
 
-.sector-card:hover .sector-icon {
+@media(hover:hover) and (pointer:fine){.sector-card:hover .sector-icon {
   transform: scale(1.15) rotateY(-15deg);
   filter: drop-shadow(0 0 12px rgba(212, 122, 61, 0.4));
-}
+}}
 
 /* ============================================
    PRICE BOARD - Rotating & Dynamic Shadows
@@ -284,11 +284,11 @@
   }
 }
 
-.price-item:hover {
+@media(hover:hover) and (pointer:fine){.price-item:hover {
   border-color: var(--pc-accent);
   box-shadow: var(--pc-shadow-md), 0 0 20px rgba(212, 122, 61, 0.2);
   transform: translateY(-8px) rotateX(3deg);
-}
+}}
 
 .price-item-image {
   width: 100%;
@@ -307,9 +307,9 @@
   transition: transform var(--pc-transition-base);
 }
 
-.price-item:hover .price-item-image img {
+@media(hover:hover) and (pointer:fine){.price-item:hover .price-item-image img {
   transform: scale(1.08) rotate(2deg);
-}
+}}
 
 /* ============================================
    SMART BASKET - Glassmorphism & Anims
@@ -411,10 +411,10 @@
   }
 }
 
-.basket-cta:hover {
+@media(hover:hover) and (pointer:fine){.basket-cta:hover {
   box-shadow: 0 12px 32px rgba(212, 122, 61, 0.4);
   transform: translateY(-2px);
-}
+}}
 
 .basket-cta:active {
   transform: translateY(0);
@@ -516,13 +516,13 @@ footer, .footer-chrome {
   transition: width var(--pc-transition-base);
 }
 
-.nav-link:hover {
+@media(hover:hover) and (pointer:fine){.nav-link:hover {
   color: var(--pc-accent-light);
-}
+}}
 
-.nav-link:hover::after {
+@media(hover:hover) and (pointer:fine){.nav-link:hover::after {
   width: 100%;
-}
+}}
 
 /* ============================================
    RESPONSIVE ADJUSTMENTS

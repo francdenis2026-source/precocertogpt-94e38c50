@@ -35,7 +35,7 @@
     color-mix(in srgb,var(--pc-navy) 6%,transparent) 100%);
 }
 html[data-theme="light"] .ref-economy::before{opacity:.96;filter:saturate(1.15) contrast(1.1) brightness(1.04)}
-html[data-theme="light"] .ref-economy::after{background:linear-gradient(90deg,rgba(245,247,244,.96) 0%,rgba(245,247,244,.9) 28%,rgba(245,247,244,.58) 46%,rgba(245,247,244,.12) 66%,rgba(14,31,44,.04) 100%)}
+html[data-theme="light"] .ref-economy::after{background:linear-gradient(90deg,rgba(245,247,244,.96) 0%,rgba(245,247,244,.9) 28%,rgba(245,247,244,.58) 46%,rgba(245,247,244,.12) 66%,rgba(14, 31, 44,.04) 100%)}
 .ref-economy__grid{gap:clamp(32px,5vw,68px);align-items:center}
 .ref-economy__grid>div:first-child{position:relative;z-index:1;max-width:620px}
 .ref-economy__grid>div:first-child::before{
@@ -64,11 +64,11 @@ html[data-theme="light"] .ref-economy::after{background:linear-gradient(90deg,rg
   border-radius:4px 4px 2px 2px;
   background:linear-gradient(180deg,#fffef9,#f5f1e6);
   color:#2c4d3e;
-  box-shadow:var(--pc-shadow-lg),6px 8px 0 rgba(6,15,22,.20);
+  box-shadow:var(--pc-shadow-lg),6px 8px 0 rgba(6, 15, 22,.20);
   font-variant-numeric:tabular-nums;
   transform:rotate(.25deg);
 }
-.ref-receipt::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(12,28,40,.035) 3px 4px);mix-blend-mode:multiply}
+.ref-receipt::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(12, 28, 40,.035) 3px 4px);mix-blend-mode:multiply}
 .ref-receipt::after{content:"";position:absolute;right:0;bottom:-10px;left:0;height:18px;background:linear-gradient(135deg,transparent 9px,#f5f1e6 0) 0 0/18px 18px repeat-x}
 .ref-receipt__top{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:2px solid #2d4f3f}
 .ref-receipt__top>div{display:grid;gap:2px}
@@ -105,7 +105,7 @@ html[data-theme="light"] .ref-economy::after{background:linear-gradient(90deg,rg
   color-mix(in srgb,var(--pc-canvas) 5%,transparent) 70%,
   color-mix(in srgb,var(--pc-navy) 5%,transparent) 100%)}
 html[data-theme="light"] .ref-local::before{filter:saturate(1.18) contrast(1.12) brightness(1.04)}
-html[data-theme="light"] .ref-local::after{background:linear-gradient(90deg,rgba(245,247,244,.96) 0%,rgba(245,247,244,.88) 29%,rgba(245,247,244,.56) 44%,rgba(245,247,244,.14) 58%,rgba(245,247,244,.02) 72%,rgba(14,31,44,.03) 100%)}
+html[data-theme="light"] .ref-local::after{background:linear-gradient(90deg,rgba(245,247,244,.96) 0%,rgba(245,247,244,.88) 29%,rgba(245,247,244,.56) 44%,rgba(245,247,244,.14) 58%,rgba(245,247,244,.02) 72%,rgba(14, 31, 44,.03) 100%)}
 .ref-local__inner{min-height:350px;display:flex;align-items:center;justify-content:space-between;gap:48px;padding-block:52px}
 .ref-local__inner>div:first-child{max-width:590px}
 .ref-local h2{color:var(--pc-ink);text-shadow:0 1px 0 color-mix(in srgb,var(--pc-surface) 58%,transparent)}
@@ -115,7 +115,7 @@ html[data-theme="light"] .ref-local::after{background:linear-gradient(90deg,rgba
 .ref-local__actions a svg:first-child{background:var(--pc-green-soft);color:var(--pc-green)}
 
 @media(hover:hover) and (pointer:fine){
-  .ref-local__actions a:hover{transform:translateX(2px);border-color:color-mix(in srgb,var(--pc-green) 42%,var(--pc-border));background:var(--pc-surface);box-shadow:var(--pc-shadow-sm)}
+  @media(hover:hover) and (pointer:fine){.ref-local__actions a:hover{transform:translateX(2px);border-color:color-mix(in srgb,var(--pc-green) 42%,var(--pc-border));background:var(--pc-surface);box-shadow:var(--pc-shadow-sm)}}
 }
 
 @media(max-width:680px){

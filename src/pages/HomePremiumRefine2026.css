@@ -441,13 +441,13 @@
     border-color: rgba(184,93,67,.35) !important;
     box-shadow: var(--wm-shadow-hover) !important;
   }
-  .pc-home .pc-category:hover,
-  .pc-home .pc-action-strip a:hover { background: #f7e9df !important; }
-  .pc-home .pc-product-card:hover .pc-product-media img { transform: scale(1.014) !important; }
-  .pc-home .pc-nav a:hover,
-  .pc-home .pc-footer a:hover { color: #f0b74d !important; }
-  .pc-home .pc-service-item:hover .pc-service-icon,
-  .pc-home .pc-category:hover .pc-category-icon { transform: scale(1.025); }
+  @media(hover:hover) and (pointer:fine){.pc-home .pc-category:hover,
+  .pc-home .pc-action-strip a:hover { background: #f7e9df !important; }}
+  @media(hover:hover) and (pointer:fine){.pc-home .pc-product-card:hover .pc-product-media img { transform: scale(1.014) !important; }}
+  @media(hover:hover) and (pointer:fine){.pc-home .pc-nav a:hover,
+  .pc-home .pc-footer a:hover { color: #f0b74d !important; }}
+  @media(hover:hover) and (pointer:fine){.pc-home .pc-service-item:hover .pc-service-icon,
+  .pc-home .pc-category:hover .pc-category-icon { transform: scale(1.025); }}
 }
 .pc-home :is(.pc-category,.pc-product-card,.pc-store-card,.pc-how-step,.pc-action-strip a,.pc-service-item,.pc-hero-side > div):active {
   transform: scale(.997) !important;

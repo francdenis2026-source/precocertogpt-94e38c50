@@ -121,10 +121,10 @@ a {
   position: relative;
 }
 
-a:hover {
+@media(hover:hover) and (pointer:fine){a:hover {
   color: var(--pc-accent-light);
   text-decoration: underline;
-}
+}}
 
 /* Buttons - Base */
 button, .btn {
@@ -152,11 +152,11 @@ button.btn-primary, .btn-primary {
   box-shadow: 0 0 0 0 rgba(212, 122, 61, 0.4);
 }
 
-button.btn-primary:hover, .btn-primary:hover {
+@media(hover:hover) and (pointer:fine){button.btn-primary:hover, .btn-primary:hover {
   background-color: var(--pc-accent-dark);
   box-shadow: 0 0 16px rgba(212, 122, 61, 0.4), 0 6px 20px rgba(212, 122, 61, 0.2);
   transform: translateY(-2px);
-}
+}}
 
 button.btn-primary:active, .btn-primary:active {
   transform: translateY(0);
@@ -170,11 +170,11 @@ button.btn-secondary, .btn-secondary {
   border: 1px solid var(--pc-border-light);
 }
 
-button.btn-secondary:hover, .btn-secondary:hover {
+@media(hover:hover) and (pointer:fine){button.btn-secondary:hover, .btn-secondary:hover {
   background-color: var(--pc-surface-lighter);
   border-color: var(--pc-accent);
   box-shadow: 0 0 12px rgba(212, 122, 61, 0.15);
-}
+}}
 
 /* Inputs & Forms */
 input, textarea, select {
@@ -209,11 +209,11 @@ input::placeholder {
   transition: all var(--pc-transition-base);
 }
 
-.card:hover, .pc-card:hover {
+@media(hover:hover) and (pointer:fine){.card:hover, .pc-card:hover {
   border-color: var(--pc-accent);
   box-shadow: var(--pc-shadow-md), 0 0 12px rgba(212, 122, 61, 0.2);
   transform: translateY(-4px);
-}
+}}
 
 /* Grid & Sections */
 .pc-grid {
@@ -266,14 +266,14 @@ input::placeholder {
   pointer-events: none;
 }
 
-.pc-glow-card:hover {
+@media(hover:hover) and (pointer:fine){.pc-glow-card:hover {
   border-color: var(--pc-accent);
   box-shadow: var(--pc-shadow-md), 0 0 20px rgba(212, 122, 61, 0.2);
-}
+}}
 
-.pc-glow-card:hover::before {
+@media(hover:hover) and (pointer:fine){.pc-glow-card:hover::before {
   opacity: 1;
-}
+}}
 
 /* Glass Morphism - Backdrop Blur */
 .pc-glass {

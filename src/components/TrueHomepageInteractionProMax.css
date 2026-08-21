@@ -26,18 +26,18 @@
 .true-home :is(a,button):focus-visible{outline:3px solid rgba(215,121,220,.55);outline-offset:3px}
 
 @media (hover:hover) and (pointer:fine){
-  .true-home .th-brand:hover{transform:translateY(-1px)}
-  .true-home .th-brand:hover img{transform:scale(1.035);filter:brightness(1.08)}
-  .true-home .th-nav a:hover,.true-home .th-login:hover{transform:translateY(-1px);background:rgba(255,255,255,.07);color:#fff}
-  .true-home .th-nav a:hover::after,.true-home .th-login:hover::after,.true-home .th-footer nav a:hover::after{transform:scaleX(1)}
-  .true-home .th-header__cta:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 12px 28px rgba(164,31,170,.28)}
-  .true-home .th-menu:hover{transform:translateY(-2px) scale(1.025);background:rgba(255,255,255,.16)}
-  .true-home .th-search button:hover{transform:translateY(-1px);filter:brightness(1.04)}
-  .true-home .th-search button:hover svg,.true-home .th-button:hover svg,.true-home .th-heading>a:hover svg,.true-home .th-hero-card>a:hover svg,.true-home .th-product__body>a:hover svg{transform:translateX(4px)}
-  .true-home .th-quick__grid>a:hover>svg,.true-home .th-store:hover>svg{transform:translateX(5px);color:#059669}
-  .true-home .th-quick__grid>a:hover>span{transform:scale(1.04)}
-  .true-home .th-product__topline button:hover svg{transform:scale(1.12)}
-  .true-home .th-footer nav a:hover{color:#fff;transform:translateY(-1px)}
+  @media(hover:hover) and (pointer:fine){.true-home .th-brand:hover{transform:translateY(-1px)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-brand:hover img{transform:scale(1.035);filter:brightness(1.08)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-nav a:hover,.true-home .th-login:hover{transform:translateY(-1px);background:rgba(255,255,255,.07);color:#fff}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-nav a:hover::after,.true-home .th-login:hover::after,.true-home .th-footer nav a:hover::after{transform:scaleX(1)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-header__cta:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 12px 28px rgba(164,31,170,.28)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-menu:hover{transform:translateY(-2px) scale(1.025);background:rgba(255,255,255,.16)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-search button:hover{transform:translateY(-1px);filter:brightness(1.04)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-search button:hover svg,.true-home .th-button:hover svg,.true-home .th-heading>a:hover svg,.true-home .th-hero-card>a:hover svg,.true-home .th-product__body>a:hover svg{transform:translateX(4px)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-quick__grid>a:hover>svg,.true-home .th-store:hover>svg{transform:translateX(5px);color:#059669}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-quick__grid>a:hover>span{transform:scale(1.04)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-product__topline button:hover svg{transform:scale(1.12)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-footer nav a:hover{color:#fff;transform:translateY(-1px)}}
 }
 
 @media(max-width:960px){

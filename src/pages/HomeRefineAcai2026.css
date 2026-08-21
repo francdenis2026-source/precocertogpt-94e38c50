@@ -94,28 +94,28 @@ html[data-theme="dark"] .hp-spotlight__prices strong { color: #f3f7f4; }
 body:has(.hp-home) .hp-header::after { opacity: 1; }
 
 .hp-brand img { transition: transform .3s var(--ease); }
-.hp-brand:hover img { transform: translateY(-1px) scale(1.015); }
+@media(hover:hover) and (pointer:fine){.hp-brand:hover img { transform: translateY(-1px) scale(1.015); }}
 
 .hp-theme, .hp-menu {
   transition: background .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
 }
 
-.hp-theme:hover, .hp-menu:hover {
+@media(hover:hover) and (pointer:fine){.hp-theme:hover, .hp-menu:hover {
   background: var(--hp-surface-2);
   border-color: color-mix(in srgb, var(--hp-brand) 34%, var(--hp-line));
   transform: translateY(-1px);
-}
+}}
 
 .hp-login {
   background: var(--plum-ink);
   transition: background .22s var(--ease), transform .22s var(--ease), box-shadow .22s var(--ease);
 }
 
-.hp-login:hover {
+@media(hover:hover) and (pointer:fine){.hp-login:hover {
   background: var(--hp-brand);
   transform: translateY(-1px);
   box-shadow: 0 10px 22px rgba(41,96,70,.32);
-}
+}}
 
 /* ============ RODAPÉ ============ */
 /* Passa a carregar a mesma árvore de links das páginas internas, em vez de
@@ -182,8 +182,8 @@ body:has(.hp-home) .hp-header::after { opacity: 1; }
   transition: right .25s var(--ease);
 }
 
-.hp-footer nav.hp-footer__nav a:hover { color: #fff; transform: translateX(2px); }
-.hp-footer nav.hp-footer__nav a:hover::after { right: 0; }
+@media(hover:hover) and (pointer:fine){.hp-footer nav.hp-footer__nav a:hover { color: #fff; transform: translateX(2px); }}
+@media(hover:hover) and (pointer:fine){.hp-footer nav.hp-footer__nav a:hover::after { right: 0; }}
 
 .hp-footer > .hp-footer__meta {
   display: flex;
@@ -227,8 +227,8 @@ body:has(.hp-home) .hp-header::after { opacity: 1; }
   transition: transform .6s var(--ease);
 }
 
-.hp-home .hp-search__submit:hover { background: var(--hp-brand-2); }
-.hp-home .hp-search__submit:hover::before { transform: translateX(130%); }
+@media(hover:hover) and (pointer:fine){.hp-home .hp-search__submit:hover { background: var(--hp-brand-2); }}
+@media(hover:hover) and (pointer:fine){.hp-home .hp-search__submit:hover::before { transform: translateX(130%); }}
 
 /* Cartões: a elevação vem com a borda ganhando cor, e a seta caminha. */
 .hp-sector-grid > a svg:last-child,
@@ -236,15 +236,15 @@ body:has(.hp-home) .hp-header::after { opacity: 1; }
   transition: transform .25s var(--ease);
 }
 
-.hp-sector-grid > a:hover svg:last-child,
-.hp-local__actions a:hover svg:last-child { transform: translateX(4px); }
+@media(hover:hover) and (pointer:fine){.hp-sector-grid > a:hover svg:last-child,
+.hp-local__actions a:hover svg:last-child { transform: translateX(4px); }}
 
 .hp-product-card__body > div > svg { transition: transform .25s var(--ease), color .25s var(--ease); }
 
-.hp-product-card:hover .hp-product-card__body > div > svg {
+@media(hover:hover) and (pointer:fine){.hp-product-card:hover .hp-product-card__body > div > svg {
   transform: translateX(4px);
   color: var(--hp-brand);
-}
+}}
 
 /* O selo de comparar entra junto com o cartão em vez de ficar sempre aceso. */
 .hp-product-card__media > span {
@@ -255,7 +255,7 @@ body:has(.hp-home) .hp-header::after { opacity: 1; }
   transition: opacity .25s var(--ease), transform .25s var(--ease);
 }
 
-.hp-product-card:hover .hp-product-card__media > span { opacity: 1; transform: translateY(0); }
+@media(hover:hover) and (pointer:fine){.hp-product-card:hover .hp-product-card__media > span { opacity: 1; transform: translateY(0); }}
 
 /* Chips de busca rápida. */
 .hp-quick-searches a { will-change: transform; }
@@ -268,9 +268,9 @@ body:has(.hp-home) .hp-header::after { opacity: 1; }
   font-weight: 800;
 }
 
-.hp-spotlight > a:hover, .hp-spotlight > button:hover {
+@media(hover:hover) and (pointer:fine){.hp-spotlight > a:hover, .hp-spotlight > button:hover {
   background: color-mix(in srgb, var(--hp-accent) 84%, #fff);
-}
+}}
 
 /* Estados pressionados: todo alvo volta ao lugar ao ser clicado, o que dá a
    sensação física de botão. */
@@ -310,9 +310,9 @@ html[data-theme="dark"] .hp-spotlight__prices strong { color: #f3f7f4; }
 
 .hp-spotlight > a, .hp-spotlight > button { color: var(--hp-accent-ink); }
 
-.hp-spotlight > a:hover, .hp-spotlight > button:hover {
+@media(hover:hover) and (pointer:fine){.hp-spotlight > a:hover, .hp-spotlight > button:hover {
   background: #e7a558;
-}
+}}
 
 /* O rótulo do rodapé usa o âmbar sobre ameixa profunda, onde ele rende bem. */
 .hp-footer nav.hp-footer nav.hp-footer__nav strong { color: #d99242; }
@@ -330,7 +330,7 @@ html[data-theme="dark"] .hp-home .hp-search__submit svg,
 html[data-theme="dark"] .hp-local__actions a:first-child svg { color: #111b22; }
 
 html[data-theme="dark"] .hp-login { background: var(--hp-brand); color: #111b22; }
-html[data-theme="dark"] .hp-login:hover { background: var(--hp-brand-2); }
+@media(hover:hover) and (pointer:fine){html[data-theme="dark"] .hp-login:hover { background: var(--hp-brand-2); }}
 
 /* ============ DOCK MÓVEL ============ */
 /* Os rótulos ficavam em 8px — os menores da página inteira, justamente na

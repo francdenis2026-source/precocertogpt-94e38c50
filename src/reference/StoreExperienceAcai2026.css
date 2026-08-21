@@ -35,6 +35,15 @@
   letter-spacing: .16em;
 }
 
+/* O cartão do hero é sempre escuro, mas a cor vinha de --pc-gold, que troca
+   com o tema do site: no claro ela fica escura (2,57:1 sobre a marinha —
+   ilegível). Aqui a cor é fixa, igual à do tema escuro, porque o fundo
+   também é fixo. Especificidade extra (.store-pro-page) para vencer a regra
+   de DesignSystem2.css, que carrega depois deste arquivo no bundle. */
+.store-pro-page .store-pro-copy > span {
+  color: #fbbf24;
+}
+
 .store-pro-copy h1 {
   margin: 6px 0 0;
   font-size: clamp(26px, 3.4vw, 38px);
@@ -102,11 +111,11 @@
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
-.store-pro-grid > a:hover {
+@media(hover:hover) and (pointer:fine){.store-pro-grid > a:hover {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--pc-green) 45%, var(--pc-border));
   box-shadow: var(--pc-shadow-sm);
-}
+}}
 
 .store-pro-product-image {
   height: 138px !important;
@@ -154,7 +163,7 @@
 }
 
 .ref-store-card { border-radius: 14px; transition: transform .18s ease, box-shadow .18s ease; }
-.ref-store-card:hover { transform: translateY(-2px); box-shadow: var(--pc-shadow-sm); }
+@media(hover:hover) and (pointer:fine){.ref-store-card:hover { transform: translateY(-2px); box-shadow: var(--pc-shadow-sm); }}
 
 /* ---------- COMPACTAÇÃO ---------- */
 .store-pro-shell { padding-block: 18px 28px; }

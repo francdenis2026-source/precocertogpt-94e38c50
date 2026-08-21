@@ -15,7 +15,7 @@
   box-shadow:var(--pc-shadow-sm);
   transition:transform 180ms var(--pc-ease),box-shadow 180ms var(--pc-ease),border-color 180ms ease;
 }
-.pc-home.pc-audit-polished .pc-category:hover { transform:translateY(-1px); box-shadow:var(--pc-shadow-md); }
+@media(hover:hover) and (pointer:fine){.pc-home.pc-audit-polished .pc-category:hover { transform:translateY(-1px); box-shadow:var(--pc-shadow-md); }}
 .pc-home.pc-audit-polished .pc-category-icon { width:40px; height:40px; border-radius:10px; }
 
 .pc-home.pc-audit-polished .pc-how-step {
@@ -25,7 +25,7 @@
   box-shadow:var(--pc-shadow-sm);
   transition:transform 180ms var(--pc-ease),box-shadow 180ms var(--pc-ease),border-color 180ms ease;
 }
-.pc-home.pc-audit-polished .pc-how-step:hover { transform:translateY(-1px); box-shadow:var(--pc-shadow-md); }
+@media(hover:hover) and (pointer:fine){.pc-home.pc-audit-polished .pc-how-step:hover { transform:translateY(-1px); box-shadow:var(--pc-shadow-md); }}
 .pc-home.pc-audit-polished .pc-how-copy p { margin-top:4px; }
 
 .pc-home.pc-audit-polished .pc-product-card { border-radius:13px; }

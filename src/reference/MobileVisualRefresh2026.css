@@ -3,8 +3,8 @@
   /* New mobile hero: real shopper, stronger subject framing and readable lower gradient. */
   .ref-home .ref-hero::before{
     background:
-      linear-gradient(180deg,rgba(9,21,30,.18) 0%,rgba(9,21,30,.40) 34%,rgba(9,21,30,.82) 72%,var(--pc-navy) 100%),
-      linear-gradient(90deg,rgba(9,21,30,.22),rgba(9,21,30,.04) 72%),
+      linear-gradient(180deg,rgba(9, 21, 30,.18) 0%,rgba(9, 21, 30,.40) 34%,rgba(9, 21, 30,.82) 72%,var(--pc-navy) 100%),
+      linear-gradient(90deg,rgba(9, 21, 30,.22),rgba(9, 21, 30,.04) 72%),
       url('/hero-feijo-real-shopper-2026.webp') 58% 42%/cover no-repeat!important;
     filter:saturate(1.08) contrast(1.08) brightness(1.01)!important;
   }

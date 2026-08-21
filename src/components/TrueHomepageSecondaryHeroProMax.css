@@ -1,6 +1,6 @@
 /* UI UX Pro Max — secondary homepage hero and product image refinement */
 .true-home .th-product__media img{width:100%;height:100%;object-fit:contain;padding:14px;background:linear-gradient(180deg,#fff,#f9f5f9);transition:transform .22s ease}
-.true-home .th-product:hover .th-product__media img{transform:scale(1.035)}
+@media(hover:hover) and (pointer:fine){.true-home .th-product:hover .th-product__media img{transform:scale(1.035)}}
 .true-home .th-mid-hero{position:relative;overflow:hidden;margin:8px 0 0;background:#4b1a4e;color:#fff;isolation:isolate}
 .true-home .th-mid-hero__image{position:absolute;inset:0;background:url('/hero-profissional.png') center 54%/cover no-repeat;filter:saturate(.94) contrast(1.06) brightness(.72);transform:scale(1.01)}
 .true-home .th-mid-hero__overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,5,22,.96) 0%,rgba(34,6,33,.86) 48%,rgba(51,8,51,.58) 100%),linear-gradient(180deg,transparent,rgba(21,5,22,.42));z-index:1}
@@ -21,9 +21,9 @@
 .true-home .th-mid-hero__steps span{display:flex;align-items:center;gap:9px;color:#f2e9f2;font-size:12px;font-weight:750}
 .true-home .th-mid-hero__steps svg{width:17px;height:17px;color:#ce70d2}
 @media(hover:hover) and (pointer:fine){
- .true-home .th-mid-hero__actions a:hover{transform:translateY(-2px)}
- .true-home .th-mid-hero__actions a:first-child:hover{background:#be36c4}
- .true-home .th-mid-hero__actions a:last-child:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.38)}
+ @media(hover:hover) and (pointer:fine){.true-home .th-mid-hero__actions a:hover{transform:translateY(-2px)}}
+ @media(hover:hover) and (pointer:fine){.true-home .th-mid-hero__actions a:first-child:hover{background:#be36c4}}
+ @media(hover:hover) and (pointer:fine){.true-home .th-mid-hero__actions a:last-child:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.38)}}
 }
 html[data-theme="dark"] .true-home .th-product__media img{background:linear-gradient(180deg,#51294f,#472549)}
 @media(max-width:850px){

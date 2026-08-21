@@ -1,7 +1,7 @@
 /* UI UX Pro Max — search dropdown layering, readability and collision fix */
 .true-home .th-hero{overflow:visible;z-index:20}
 .true-home .th-hero__image{transform:none}
-.true-home .th-hero:hover .th-hero__image{transform:none}
+@media(hover:hover) and (pointer:fine){.true-home .th-hero:hover .th-hero__image{transform:none}}
 .true-home .th-hero__content{position:relative;z-index:22}
 .true-home .th-hero__copy{position:relative;z-index:24}
 .true-home .th-search-wrap{position:relative;z-index:1000}

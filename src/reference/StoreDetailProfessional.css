@@ -7,7 +7,7 @@
 .store-pro-topline>span,.store-pro-back{display:flex;align-items:center;gap:7px}
 .store-pro-topline svg,.store-pro-back svg{width:16px;height:16px}
 .store-pro-back{width:fit-content;color:var(--pc-ink);font-weight:750;text-decoration:none;transition:color .16s ease,transform .16s ease}
-.store-pro-back:hover{color:var(--pc-green-strong);transform:translateX(-2px)}
+@media(hover:hover) and (pointer:fine){.store-pro-back:hover{color:var(--pc-green-strong);transform:translateX(-2px)}}
 
 .store-pro-hero{position:relative;isolation:isolate;min-height:300px;overflow:hidden;border:1px solid color-mix(in srgb,var(--pc-border) 50%,#3c6451);border-radius:var(--pc-radius-block);background:var(--pc-navy) url('/mercado-bairro-feijo-v1.webp') 74% 30%/cover no-repeat;box-shadow:var(--pc-shadow-sm)}
 .store-pro-hero__overlay{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(8,17,23,.98) 0%,rgba(8,17,23,.94) 40%,rgba(8,17,23,.66) 70%,rgba(8,17,23,.3) 100%)}
@@ -71,7 +71,7 @@
 
 .store-pro-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
 .store-pro-grid>a{min-height:0!important;padding:0!important;overflow:hidden;border:1px solid var(--pc-border)!important;border-radius:18px!important;background:var(--pc-surface)!important;box-shadow:none!important;text-decoration:none!important;transition:border-color .18s ease,background .18s ease,transform .16s ease,box-shadow .18s ease}
-.store-pro-grid>a:hover{border-color:color-mix(in srgb,var(--pc-green) 45%,var(--pc-border))!important;transform:translateY(-3px);box-shadow:var(--pc-shadow-sm)!important}
+@media(hover:hover) and (pointer:fine){.store-pro-grid>a:hover{border-color:color-mix(in srgb,var(--pc-green) 45%,var(--pc-border))!important;transform:translateY(-3px);box-shadow:var(--pc-shadow-sm)!important}}
 .store-pro-grid>a:focus-visible{outline:3px solid color-mix(in srgb,var(--pc-green) 45%,transparent);outline-offset:3px}
 .store-pro-product-image{height:160px!important;margin:0!important;padding:12px;background:var(--pc-surface-2)!important;border-radius:0!important;overflow:hidden}
 .store-pro-product-image>img{width:100%!important;height:100%!important;object-fit:contain!important}

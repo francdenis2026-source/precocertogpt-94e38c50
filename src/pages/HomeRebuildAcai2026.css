@@ -51,8 +51,8 @@ html[data-theme="dark"] .hp-home {
   transition: left .22s var(--ease), right .22s var(--ease);
 }
 
-.hp-header nav a:hover { color: var(--hp-brand); }
-.hp-header nav a:hover::after { left: 12px; right: 12px; }
+@media(hover:hover) and (pointer:fine){.hp-header nav a:hover { color: var(--hp-brand); }}
+@media(hover:hover) and (pointer:fine){.hp-header nav a:hover::after { left: 12px; right: 12px; }}
 
 .hp-brand small { font-size: var(--t-eyebrow); color: var(--ink-3); }
 
@@ -121,11 +121,11 @@ html[data-theme="dark"] .hp-home {
   transition: background .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease);
 }
 
-.hp-home .hp-search__submit:hover {
+@media(hover:hover) and (pointer:fine){.hp-home .hp-search__submit:hover {
   background: #34a16e;
   transform: translateY(-1px);
   box-shadow: 0 10px 22px rgba(42,135,92,.4);
-}
+}}
 
 .hp-home .hp-search__submit:active { transform: translateY(0); }
 
@@ -141,11 +141,11 @@ html[data-theme="dark"] .hp-home {
   transition: background .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
 }
 
-.hp-quick-searches a:hover {
+@media(hover:hover) and (pointer:fine){.hp-quick-searches a:hover {
   background: rgba(42,135,92,.9);
   border-color: rgba(166,233,202,.6);
   transform: translateY(-1px);
-}
+}}
 
 /* ============ CARD DE DESTAQUE ============ */
 .hp-spotlight {
@@ -164,10 +164,10 @@ html[data-theme="dark"] .hp-home {
   transition: transform .2s var(--ease), box-shadow .2s var(--ease);
 }
 
-.hp-spotlight > a:hover, .hp-spotlight > button:hover {
+@media(hover:hover) and (pointer:fine){.hp-spotlight > a:hover, .hp-spotlight > button:hover {
   transform: translateY(-1px);
   box-shadow: 0 12px 26px rgba(0,0,0,.3);
-}
+}}
 
 /* ============ SEÇÕES ============ */
 .hp-sectors, .hp-offers { padding-block: var(--sec-y); }
@@ -190,7 +190,7 @@ html[data-theme="dark"] .hp-home {
   transition: gap .2s var(--ease), color .2s var(--ease);
 }
 
-.hp-section-head > a:hover { gap: 11px; }
+@media(hover:hover) and (pointer:fine){.hp-section-head > a:hover { gap: 11px; }}
 
 /* ============ SETORES ============ */
 .hp-sector-grid { gap: 10px; }
@@ -202,16 +202,16 @@ html[data-theme="dark"] .hp-home {
   transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
 }
 
-.hp-sector-grid > a:hover {
+@media(hover:hover) and (pointer:fine){.hp-sector-grid > a:hover {
   transform: translateY(-3px);
   border-color: color-mix(in srgb, var(--hp-brand) 42%, var(--hp-line));
   box-shadow: 0 14px 30px rgba(18,35,48,.13);
-}
+}}
 
 .hp-sector-grid > a strong { font-size: var(--t-body); }
 .hp-sector-grid > a small { font-size: var(--t-meta); color: var(--ink-3); }
 .hp-sector-grid i { transition: transform .2s var(--ease); }
-.hp-sector-grid > a:hover i { transform: scale(1.07); }
+@media(hover:hover) and (pointer:fine){.hp-sector-grid > a:hover i { transform: scale(1.07); }}
 
 /* ============ CARDS DE PRODUTO ============ */
 /* Mais densos e sem perder informação: categoria, nome, marca, tamanho e
@@ -229,15 +229,15 @@ html[data-theme="dark"] .hp-home {
   transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s var(--ease);
 }
 
-.hp-product-card:hover {
+@media(hover:hover) and (pointer:fine){.hp-product-card:hover {
   transform: translateY(-3px);
   border-color: color-mix(in srgb, var(--hp-brand) 40%, var(--hp-line));
   box-shadow: 0 16px 34px rgba(18,35,48,.15);
-}
+}}
 
 .hp-product-card__media { height: 128px; padding: 10px; }
 .hp-product-card__media img { transition: transform .3s var(--ease); }
-.hp-product-card:hover .hp-product-card__media img { transform: scale(1.05); }
+@media(hover:hover) and (pointer:fine){.hp-product-card:hover .hp-product-card__media img { transform: scale(1.05); }}
 
 .hp-product-card__body { padding: 11px 12px 12px; display: flex; flex-direction: column; gap: 3px; }
 
@@ -287,11 +287,11 @@ html[data-theme="dark"] .hp-home {
   transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
 }
 
-.hp-local__actions a:hover {
+@media(hover:hover) and (pointer:fine){.hp-local__actions a:hover {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--hp-brand) 45%, var(--hp-line));
   box-shadow: 0 12px 26px rgba(18,35,48,.14);
-}
+}}
 
 /* ============ RODAPÉ ============ */
 .hp-footer { padding: 28px 0; }

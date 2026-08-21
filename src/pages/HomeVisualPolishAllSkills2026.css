@@ -75,8 +75,8 @@
   border-color: rgba(255,255,255,.16);
   background: rgba(255,255,255,.08);
 }
-.pc-home .pc-icon-button:hover,
-.pc-home .pc-menu-button:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.26); }
+@media(hover:hover) and (pointer:fine){.pc-home .pc-icon-button:hover,
+.pc-home .pc-menu-button:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.26); }}
 .pc-home .pc-merchant {
   min-height: 44px;
   padding-inline: 16px;
@@ -86,7 +86,7 @@
   font-size: .84rem;
   font-weight: 950;
 }
-.pc-home .pc-merchant:hover { background: #ffd06c; transform: translateY(-1px); }
+@media(hover:hover) and (pointer:fine){.pc-home .pc-merchant:hover { background: #ffd06c; transform: translateY(-1px); }}
 .pc-home .pc-mobile-menu { background: var(--vp-header); }
 
 /* hero: larger readable type, stronger focal hierarchy */
@@ -133,7 +133,7 @@
   color: #491949;
   font-size: .88rem;
 }
-.pc-home .pc-search button:hover { background: var(--vp-teal-bright); }
+@media(hover:hover) and (pointer:fine){.pc-home .pc-search button:hover { background: var(--vp-teal-bright); }}
 .pc-home .pc-quick { font-size: .79rem; gap: 7px; }
 .pc-home .pc-quick button { min-height: 34px; font-size: .77rem; padding-inline: 11px; }
 

@@ -74,7 +74,7 @@
   transition: color .2s var(--ease);
 }
 
-.hp-footer__meta:hover .hp-footer__dev { color: #c9ded4; }
+@media(hover:hover) and (pointer:fine){.hp-footer__meta:hover .hp-footer__dev { color: #c9ded4; }}
 
 /* ============ RESPONSIVO ============ */
 @media (max-width: 1080px) {

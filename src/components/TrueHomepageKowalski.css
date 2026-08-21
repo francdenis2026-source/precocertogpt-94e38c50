@@ -23,7 +23,7 @@
 
 .true-home .th-hero{min-height:548px;background:var(--th-navy)}
 .true-home .th-hero__image{transform:none!important;transition:none!important;filter:saturate(.82) contrast(1.05) brightness(.88)}
-.true-home .th-hero:hover .th-hero__image{transform:none!important}
+@media(hover:hover) and (pointer:fine){.true-home .th-hero:hover .th-hero__image{transform:none!important}}
 .true-home .th-hero__overlay{background:linear-gradient(90deg,rgba(21,6,22,.98) 0%,rgba(25,7,25,.92) 43%,rgba(25,7,25,.5) 76%,rgba(25,7,25,.22) 100%),linear-gradient(180deg,rgba(25,7,25,.06),rgba(25,7,25,.42))}
 .true-home .th-hero__content{min-height:548px;grid-template-columns:minmax(0,1.48fr) minmax(270px,.52fr);gap:48px;padding:56px 0 58px}
 .true-home .th-hero__copy{max-width:760px}
@@ -91,14 +91,14 @@
 .true-home :is(a,button,input):focus-visible{outline:3px solid rgba(164,31,170,.36);outline-offset:3px}
 
 @media (hover:hover) and (pointer:fine){
-  .true-home .th-nav a:hover,.true-home .th-login:hover{transform:none;background:rgba(255,255,255,.065)}
-  .true-home .th-header__cta:hover,.true-home .th-search button:hover,.true-home .th-button:hover{transform:none;filter:brightness(1.035)}
-  .true-home .th-quick__grid>a:hover{transform:none;border-color:#d1b0d3;box-shadow:0 8px 22px rgba(38,19,37,.065);background:#fdfbfd}
-  .true-home .th-product:hover{transform:none;border-color:#cfadd1;box-shadow:0 10px 26px rgba(38,19,37,.075)}
-  .true-home .th-product:hover .th-product__media img{transform:scale(1.025)}
-  .true-home .th-product__topline button:hover{transform:none;background:#fff4f5;color:#d81b4c;border-color:#ffd5de}
-  .true-home .th-store:hover{transform:none;border-color:#d1b2d2;box-shadow:0 8px 22px rgba(38,19,37,.065);background:#fff}
-  .true-home .th-brand:hover,.true-home .th-brand:hover img,.true-home .th-footer nav a:hover{transform:none!important}
+  @media(hover:hover) and (pointer:fine){.true-home .th-nav a:hover,.true-home .th-login:hover{transform:none;background:rgba(255,255,255,.065)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-header__cta:hover,.true-home .th-search button:hover,.true-home .th-button:hover{transform:none;filter:brightness(1.035)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-quick__grid>a:hover{transform:none;border-color:#d1b0d3;box-shadow:0 8px 22px rgba(38,19,37,.065);background:#fdfbfd}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-product:hover{transform:none;border-color:#cfadd1;box-shadow:0 10px 26px rgba(38,19,37,.075)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-product:hover .th-product__media img{transform:scale(1.025)}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-product__topline button:hover{transform:none;background:#fff4f5;color:#d81b4c;border-color:#ffd5de}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-store:hover{transform:none;border-color:#d1b2d2;box-shadow:0 8px 22px rgba(38,19,37,.065);background:#fff}}
+  @media(hover:hover) and (pointer:fine){.true-home .th-brand:hover,.true-home .th-brand:hover img,.true-home .th-footer nav a:hover{transform:none!important}}
 }
 
 html[data-theme="dark"] .true-home{--th-surface:#48254a;--th-soft:#452347;--th-line:#4d304c;--th-ink:#f5edf6;--th-muted:#cdbacc}

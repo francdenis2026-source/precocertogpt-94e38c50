@@ -7,7 +7,7 @@
 .ref-home .ref-hero h1{margin-block:12px 13px;font-size:var(--pc-display,clamp(48px,6.2vw,78px));line-height:.9}
 .ref-home .ref-hero__copy>p{margin-bottom:18px}
 .ref-home .ref-trust{margin-top:12px}
-.ref-home .ref-live-card{padding:17px;box-shadow:var(--pc-shadow-sm,0 8px 24px rgba(14,31,44,.08))}
+.ref-home .ref-live-card{padding:17px;box-shadow:var(--pc-shadow-sm,0 8px 24px rgba(14, 31, 44,.08))}
 .ref-home .ref-live-card__product{padding-block:13px}
 .ref-home .ref-live-card__prices>div{padding-block:11px}
 .ref-home .ref-live-card>button{margin-top:11px}

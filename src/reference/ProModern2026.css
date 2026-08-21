@@ -39,7 +39,7 @@ html[data-theme="dark"] .hp-home{
   content:"";position:absolute;left:50%;right:50%;bottom:5px;height:2px;
   border-radius:999px;background:var(--hp-brand);transition:left .2s ease,right .2s ease;
 }
-.hp-header nav a:hover::after{left:18%;right:18%}
+@media(hover:hover) and (pointer:fine){.hp-header nav a:hover::after{left:18%;right:18%}}
 .hp-login{background:var(--hp-brand-2);box-shadow:0 8px 22px rgba(6,75,60,.2)}
 .hp-hero{min-height:520px;background:#062d24}
 .hp-hero__media{background-position:center 34%;filter:saturate(.92) contrast(1.04)}
@@ -66,7 +66,7 @@ html[data-theme="dark"] .hp-home{
 }
 .hp-search:focus-within{transform:translateY(-1px);box-shadow:0 0 0 3px rgba(94,234,212,.3),0 26px 58px rgba(0,0,0,.34)}
 .hp-search__submit{background:#08755a;transition:filter .18s ease,transform .18s ease}
-.hp-search__submit:hover{filter:brightness(1.09)}
+@media(hover:hover) and (pointer:fine){.hp-search__submit:hover{filter:brightness(1.09)}}
 .hp-search__submit:active{transform:translateY(1px)}
 .hp-quick-searches a{border-color:rgba(255,255,255,.17);background:rgba(255,255,255,.075);backdrop-filter:blur(8px)}
 .hp-spotlight{
@@ -75,7 +75,7 @@ html[data-theme="dark"] .hp-home{
 }
 .hp-spotlight__product{border:1px solid rgba(9,80,61,.1);box-shadow:0 12px 32px rgba(0,0,0,.12)}
 .hp-spotlight>a{background:#ffd166;transition:transform .18s ease,filter .18s ease}
-.hp-spotlight>a:hover{transform:translateY(-2px);filter:brightness(1.04)}
+@media(hover:hover) and (pointer:fine){.hp-spotlight>a:hover{transform:translateY(-2px);filter:brightness(1.04)}}
 .hp-sectors,.hp-offers{padding-block:52px}
 .hp-offers{padding-top:10px;padding-bottom:62px}
 .hp-section-head{margin-bottom:20px}
@@ -85,7 +85,7 @@ html[data-theme="dark"] .hp-home{
   min-height:104px;border-radius:16px;box-shadow:0 8px 24px rgba(10,54,42,.045);
 }
 .hp-sector-grid i{background:color-mix(in srgb,var(--hp-brand) 9%,var(--hp-surface));transition:transform .2s ease}
-.hp-sector-grid>a:hover i{transform:scale(1.06) rotate(-2deg)}
+@media(hover:hover) and (pointer:fine){.hp-sector-grid>a:hover i{transform:scale(1.06) rotate(-2deg)}}
 .hp-product-grid{gap:12px}
 .hp-product-card{border-radius:18px;box-shadow:0 10px 28px rgba(10,54,42,.055)}
 .hp-product-card__media{height:164px;background:linear-gradient(145deg,color-mix(in srgb,var(--hp-brand) 7%,var(--hp-surface)),var(--hp-surface-2))}
@@ -247,7 +247,7 @@ html[data-theme="dark"] .hp-home{
   font-weight:700;
   transition:filter .18s ease,transform .18s ease;
 }
-.ref-home .ref-search-submit:hover{filter:brightness(1.08)}
+@media(hover:hover) and (pointer:fine){.ref-home .ref-search-submit:hover{filter:brightness(1.08)}}
 .ref-home .ref-search-submit:active{transform:translateY(1px)}
 
 /* ============================================================
@@ -276,7 +276,7 @@ html[data-theme="dark"] .hp-home{
   color:#fff;
   transition:filter .18s ease;
 }
-.ref-home .ref-live-card>button:hover{filter:brightness(1.18)}
+@media(hover:hover) and (pointer:fine){.ref-home .ref-live-card>button:hover{filter:brightness(1.18)}}
 
 /* ============================================================
    TELAS DE LOGIN / CADASTRO
@@ -352,7 +352,7 @@ html[data-theme="dark"] .hp-home{
   color:var(--pc-ink);
   transition:border-color .18s ease,background .18s ease,box-shadow .18s ease;
 }
-.ref-account-tabs button:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)}
+@media(hover:hover) and (pointer:fine){.ref-account-tabs button:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)}}
 .ref-account-tabs button.is-active{
   border-color:var(--pc-green-strong);
   background:var(--pc-green-soft);
@@ -384,7 +384,7 @@ html[data-theme="dark"] .hp-home{
   font-weight:700;
   transition:filter .18s ease,transform .18s ease;
 }
-.ref-auth__submit:hover:not(:disabled){filter:brightness(1.08)}
+@media(hover:hover) and (pointer:fine){.ref-auth__submit:hover:not(:disabled){filter:brightness(1.08)}}
 .ref-auth__submit:active:not(:disabled){transform:translateY(1px)}
 .ref-auth__submit:disabled{opacity:.6;cursor:not-allowed}
 .ref-auth__recover{color:var(--pc-green-strong);font-weight:700}
@@ -413,7 +413,7 @@ html[data-theme="dark"] .hp-home{
   font-weight:650;
   transition:background .18s ease,color .18s ease;
 }
-.ref-nav a:hover{background:var(--pc-surface-2);color:var(--pc-ink)}
+@media(hover:hover) and (pointer:fine){.ref-nav a:hover{background:var(--pc-surface-2);color:var(--pc-ink)}}
 .ref-nav a.is-active{background:var(--pc-green-soft);color:var(--pc-green-strong)!important}
 .ref-header__actions>a:first-child,
 .ref-menu,
@@ -427,10 +427,10 @@ html[data-theme="dark"] .hp-home{
   color:var(--pc-ink);
   transition:border-color .18s ease,background .18s ease;
 }
-.ref-header__actions>a:first-child:hover,
+@media(hover:hover) and (pointer:fine){.ref-header__actions>a:first-child:hover,
 .ref-menu:hover,
 .ref-favorites-link:hover,
-.ref-theme:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)}
+.ref-theme:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)}}
 .ref-signin{
   min-height:40px;
   border-radius:var(--pc-radius-control);
@@ -440,7 +440,7 @@ html[data-theme="dark"] .hp-home{
   box-shadow:0 6px 16px color-mix(in srgb,var(--pc-green-strong) 26%,transparent);
   transition:filter .18s ease,transform .18s ease;
 }
-.ref-signin:hover{filter:brightness(1.08);transform:translateY(-1px)}
+@media(hover:hover) and (pointer:fine){.ref-signin:hover{filter:brightness(1.08);transform:translateY(-1px)}}
 
 /* ============================================================
    ÍCONES — traço e tamanho consistentes em toda a interface
@@ -464,14 +464,14 @@ html[data-theme="dark"] .hp-home{
   text-wrap:balance;
 }
 .ref-page .ref-section__heading>a{color:var(--pc-green-strong);font-weight:700}
-.ref-page .ref-section__heading>a:hover{text-decoration:none}
+@media(hover:hover) and (pointer:fine){.ref-page .ref-section__heading>a:hover{text-decoration:none}}
 
 /* Tabela de preços */
 .ref-home .ref-price-row{
   min-height:78px;
   transition:background .16s ease;
 }
-.ref-home .ref-price-row:hover{background:var(--pc-surface-2);transform:none}
+@media(hover:hover) and (pointer:fine){.ref-home .ref-price-row:hover{background:var(--pc-surface-2);transform:none}}
 .ref-home .ref-price-value strong{
   color:var(--pc-green-strong);
   font-variant-numeric:tabular-nums;

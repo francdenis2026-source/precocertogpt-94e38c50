@@ -45,27 +45,28 @@
    alternar quatro vezes. A fotografia continua, agora sob um véu claro. */
 .hp-story { background: var(--hp-surface-2); color: var(--hp-ink); }
 
-.hp-story__media { opacity: .34; }
+.hp-story__media { opacity: .78; }
 
 .hp-story::after {
   background:
     linear-gradient(
       96deg,
       rgba(248,250,249,.97) 0%,
-      rgba(248,250,249,.93) 32%,
-      rgba(248,250,249,.72) 54%,
-      rgba(248,250,249,.36) 74%,
-      rgba(248,250,249,.14) 100%
+      rgba(248,250,249,.95) 34%,
+      rgba(248,250,249,.82) 48%,
+      rgba(248,250,249,.30) 61%,
+      rgba(248,250,249,.05) 72%,
+      transparent 82%
     );
 }
 
 .hp-story h2 { color: #14212b; }
-.hp-story > .hp-shell > p { color: var(--ink-2); }
-.hp-story > .hp-shell > span { color: var(--hp-brand); }
+.hp-story > .hp-shell > p { color: #3b4d45; font-weight: 560; }
+.hp-story > .hp-shell > span { color: #17613e; }
 
 .hp-story ol li {
   border: 1px solid var(--hp-line);
-  background: color-mix(in srgb, var(--hp-surface) 88%, transparent);
+  background: color-mix(in srgb, var(--hp-surface) 94%, transparent);
   backdrop-filter: blur(6px);
 }
 
@@ -82,10 +83,10 @@
   color: #fcfdfc;
 }
 
-.hp-story > .hp-shell > a:hover {
+@media(hover:hover) and (pointer:fine){.hp-story > .hp-shell > a:hover {
   background: var(--hp-brand-2);
   color: #fcfdfc;
-}
+}}
 
 /* ============ RODAPÉ ============ */
 /* Continua escuro — o rodapé fecha a página e essa é a convenção — mas na
@@ -111,8 +112,8 @@
    antes, feita para fundo escuro: as descrições das etapas rendiam 1,65:1.
    Elas ficam num <small> dentro de <span>, e a regra genérica do span não
    alcançava o filho. */
-.hp-story ol li span small { color: var(--ink-3); }
-.hp-story ol li span strong { color: var(--plum-ink); }
+.hp-story ol li span small { color: #4a5b53; }
+.hp-story ol li span strong { color: #14212b; }
 .hp-story ol li > b { color: var(--hp-brand); }
 
 /* O rodapé clareou, então o texto de apoio precisa acompanhar. */

@@ -37,11 +37,11 @@
 .ref-community{margin:8px 0 0!important;color:var(--pc-muted)!important;font-size:var(--pc-text-xs);line-height:1.45}
 
 @media(hover:hover) and (pointer:fine){
-  .ref-product-header>a:first-child:hover,.ref-product-header>button:hover,.ref-product-actions button:first-child:hover,.ref-history:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-3)}
-  .ref-product-actions button:last-child:hover{border-color:var(--pc-green-strong);background:var(--pc-green-strong)}
+  @media(hover:hover) and (pointer:fine){.ref-product-header>a:first-child:hover,.ref-product-header>button:hover,.ref-product-actions button:first-child:hover,.ref-history:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-3)}}
+  @media(hover:hover) and (pointer:fine){.ref-product-actions button:last-child:hover{border-color:var(--pc-green-strong);background:var(--pc-green-strong)}}
   .ref-product-header>:is(a,button):active,.ref-product-actions button:active,.ref-offers>a:active{transform:translateY(1px)}
-  .ref-offers>a:hover{background:var(--pc-surface-2);box-shadow:inset 3px 0 0 var(--pc-border-strong)}
-  .ref-offers>a.is-best:hover{background:var(--pc-green-soft);box-shadow:inset 3px 0 0 var(--pc-green)}
+  @media(hover:hover) and (pointer:fine){.ref-offers>a:hover{background:var(--pc-surface-2);box-shadow:inset 3px 0 0 var(--pc-border-strong)}}
+  @media(hover:hover) and (pointer:fine){.ref-offers>a.is-best:hover{background:var(--pc-green-soft);box-shadow:inset 3px 0 0 var(--pc-green)}}
 }
 
 @media(max-width:820px){

@@ -103,10 +103,10 @@ html:not([data-theme="dark"]) .pcx-product__media img {
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease;
 }
 
-html:not([data-theme="dark"]) .pcx-product:hover .pcx-product__media img {
+@media(hover:hover) and (pointer:fine){html:not([data-theme="dark"]) .pcx-product:hover .pcx-product__media img {
   filter: drop-shadow(0 12px 24px rgba(56,27,57, 0.12)) saturate(1.05);
   transform: scale(1.06) translateY(-4px);
-}
+}}
 
 /* Card Typography & Contrast */
 html:not([data-theme="dark"]) .pcx-product__body strong {
@@ -142,10 +142,10 @@ html:not([data-theme="dark"]) .pcx-quick button {
   font-weight: 900;
 }
 
-html:not([data-theme="dark"]) .pcx-quick button:hover {
+@media(hover:hover) and (pointer:fine){html:not([data-theme="dark"]) .pcx-quick button:hover {
   color: #a34827;
   background: rgba(163, 72, 39, 0.05);
-}
+}}
 
 /* Essentials Category Cards */
 html:not([data-theme="dark"]) .pcx-category {
@@ -153,14 +153,14 @@ html:not([data-theme="dark"]) .pcx-category {
   border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-html:not([data-theme="dark"]) .pcx-category:hover {
+@media(hover:hover) and (pointer:fine){html:not([data-theme="dark"]) .pcx-category:hover {
   background: #fdfcf9;
   color: var(--pc-light-accent);
-}
+}}
 
-html:not([data-theme="dark"]) .pcx-category:hover small {
+@media(hover:hover) and (pointer:fine){html:not([data-theme="dark"]) .pcx-category:hover small {
   color: var(--pc-light-muted);
-}
+}}
 
 /* Story/Banner Sections Contrast */
 html:not([data-theme="dark"]) .pcx-story::after {
@@ -180,10 +180,10 @@ html:not([data-theme="dark"]) .pcx-footer a {
   font-weight: 600 !important;
 }
 
-html:not([data-theme="dark"]) .pcx-footer a:hover {
+@media(hover:hover) and (pointer:fine){html:not([data-theme="dark"]) .pcx-footer a:hover {
   color: var(--pc-light-accent);
   opacity: 1;
-}
+}}
 
 html:not([data-theme="dark"]) .pcx-footer small {
   color: rgba(255, 255, 255, 0.6);

@@ -76,10 +76,10 @@
   transition: background-color 160ms ease, color 160ms ease, transform 140ms cubic-bezier(.22,.8,.22,1);
 }
 
-.pc-search-overlay__clear:hover {
+@media(hover:hover) and (pointer:fine){.pc-search-overlay__clear:hover {
   background: #eee6ef;
   color: #491c4a;
-}
+}}
 
 .pc-search-overlay__clear:active { transform: scale(.95); }
 .pc-search-overlay__clear svg { width: 18px; height: 18px; }
@@ -103,7 +103,7 @@
   transition: background-color 160ms ease, transform 140ms cubic-bezier(.22,.8,.22,1);
 }
 
-.pc-search-overlay__submit:hover { background: #dc5f3c; }
+@media(hover:hover) and (pointer:fine){.pc-search-overlay__submit:hover { background: #dc5f3c; }}
 .pc-search-overlay__submit:active { transform: scale(.98); }
 .pc-search-overlay__submit svg { width: 15px; height: 15px; }
 

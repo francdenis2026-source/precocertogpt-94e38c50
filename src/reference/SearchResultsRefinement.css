@@ -43,9 +43,9 @@
 .ref-search-results>footer svg{width:14px}
 
 @media(hover:hover) and (pointer:fine){
-  .ref-search-clear:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)!important;color:var(--pc-ink)}
-  .ref-search-results__list>button:hover{background:var(--pc-surface-2);transform:translateX(2px)}
-  .ref-search-results__list>button.is-keyboard-active:hover,.ref-search-results__list>button[aria-selected="true"]:hover{background:color-mix(in srgb,var(--pc-info) 10%,var(--pc-surface))}
+  @media(hover:hover) and (pointer:fine){.ref-search-clear:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)!important;color:var(--pc-ink)}}
+  @media(hover:hover) and (pointer:fine){.ref-search-results__list>button:hover{background:var(--pc-surface-2);transform:translateX(2px)}}
+  @media(hover:hover) and (pointer:fine){.ref-search-results__list>button.is-keyboard-active:hover,.ref-search-results__list>button[aria-selected="true"]:hover{background:color-mix(in srgb,var(--pc-info) 10%,var(--pc-surface))}}
 }
 
 @media(max-width:680px){
@@ -82,7 +82,7 @@ main[tabindex="-1"]:focus{outline:none}
 .ref-product-loading p{max-width:46ch;margin:0;color:var(--pc-muted);font-size:var(--pc-text-meta);line-height:1.5}
 
 /* Modal compacto de produto. */
-.ref-product-dialog-backdrop{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:20px;background:rgba(7,17,24,.62);backdrop-filter:blur(4px)}
+.ref-product-dialog-backdrop{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:20px;background:rgba(7, 17, 24,.62);backdrop-filter:blur(4px)}
 .ref-product-dialog{position:relative;width:min(680px,100%);max-height:calc(100dvh - 40px);overflow:auto;display:grid;grid-template-columns:minmax(210px,.75fr) minmax(0,1.25fr);border:1px solid var(--pc-border);border-radius:var(--pc-radius-block);background:var(--pc-surface);color:var(--pc-ink);box-shadow:var(--pc-shadow-lg);animation:ref-dialog-in 220ms cubic-bezier(.23,1,.32,1) both}
 .ref-product-dialog__close{position:absolute;z-index:2;top:12px;right:12px;width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid var(--pc-border);border-radius:50%;background:var(--pc-surface-2);color:var(--pc-ink);cursor:pointer}
 .ref-product-dialog__close svg{width:18px}
@@ -113,7 +113,7 @@ main[tabindex="-1"]:focus{outline:none}
 .ref-results .ref-results-table{transition:opacity 140ms ease}.ref-results.is-updating .ref-results-table{opacity:.68;pointer-events:none}
 .ref-results-more{width:100%;min-height:48px;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px;border:1px solid var(--pc-border);border-radius:var(--pc-radius-control);background:var(--pc-surface);color:var(--pc-ink);font-size:var(--pc-text-sm);font-weight:850}
 .ref-results-more span{color:var(--pc-muted);font-size:var(--pc-text-xs);font-weight:650}
-@media(hover:hover) and (pointer:fine){.ref-results-more:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)}}
+@media(hover:hover) and (pointer:fine){@media(hover:hover) and (pointer:fine){.ref-results-more:hover{border-color:var(--pc-border-strong);background:var(--pc-surface-2)}}}
 
 @media(max-width:680px){
   .ref-product-dialog-backdrop{align-items:end;padding:10px}

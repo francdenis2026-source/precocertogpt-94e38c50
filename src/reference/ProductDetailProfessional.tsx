@@ -10,7 +10,7 @@ import type { CatalogPayload, Product } from "../data/catalog";
 import { resolveProductImage } from "../data/productImageResolver";
 import { useFavorites } from "../features/favorites/FavoritesProvider";
 import { supabase } from "../lib/supabase";
-import { PublicFooter, PublicHeader } from "./ReferenceExperience";
+import { PublicHeader } from "./ReferenceExperience";
 import "./ProductDetailUltimate2026.css";
 
 const brl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
@@ -41,7 +41,7 @@ function ProductImage({ product, compact = false }: { product: Product; compact?
   const source = resolveProductImage(product);
   const [failed, setFailed] = useState(false);
   useEffect(() => setFailed(false), [source]);
-  if (source && !failed) return <img className={compact ? "pdx-image pdx-image--compact" : "pdx-image"} src={source} alt={product.name} loading={compact ? "lazy" : "eager"} onError={() => setFailed(true)} />;
+  if (source && !failed) return <img className={compact ? "pdx-image pdx-image--compact" : "pdx-image"} src={source} alt={product.name} width="400" height="400" loading={compact ? "lazy" : "eager"} onError={() => setFailed(true)} />;
   return <div className={compact ? "pdx-image-fallback pdx-image-fallback--compact" : "pdx-image-fallback"} role="img" aria-label={`Imagem de ${product.name} em atualização`}><PackageSearch /><span>Imagem em atualização</span></div>;
 }
 
@@ -160,7 +160,7 @@ export function ProductDetailProfessional() {
             <div><span>MENOR PREÇO ENCONTRADO <BadgeCheck/></span><strong>{brl.format(product.minPrice)}</strong><small>{bestOffer ? `em ${bestOffer.establishment}` : "preço verificado"}</small></div>
             <div className="pdx-price-facts">
               <span><Store/><b>{offers.length}</b><small>{offers.length === 1 ? "loja consultada" : "lojas comparadas"}</small></span>
-              <span><TrendingDown/><b>{priceSpread ? brl.format(priceSpread) : "—"}</b><small>diferença entre lojas</small></span>
+              <span><TrendingDown/><b>{priceSpread ? brl.format(priceSpread) : "-"}</b><small>diferença entre lojas</small></span>
               <span><CalendarDays/><b>{updatedAt}</b><small>última verificação</small></span>
             </div>
             {savingVsPrevious > 0 && <div className="pdx-price-saving"><TrendingDown/> Está {brl.format(savingVsPrevious)} abaixo do último preço registrado.</div>}
@@ -201,7 +201,7 @@ export function ProductDetailProfessional() {
       <aside className="pdx-disclaimer"><Info/><div><strong>Catálogo informativo</strong><span>Preços e disponibilidade podem mudar. O PreçoCerto organiza as informações para facilitar sua comparação; a confirmação final deve ser feita com o estabelecimento.</span></div></aside>
     </main>
 
-    <PublicFooter/>
+
 
     <div className="pdx-mobile-bar"><div><small>Menor preço</small><strong>{brl.format(product.minPrice)}</strong></div><button type="button" className="pc-btn pc-btn--primary" onClick={() => void addToBasket(product)}><ShoppingBasket/>{quantity ? `Adicionar (${quantity})` : "Adicionar à lista"}</button></div>
     {message && <div className="pdx-toast" role="status" aria-live="polite">{message}</div>}

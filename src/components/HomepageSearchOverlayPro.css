@@ -99,7 +99,7 @@
   cursor: pointer;
   transition: transform 150ms cubic-bezier(.2,.8,.2,1), background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
-.pc-search-overlay__header > button:hover { background: #f7f3f7; color: #532c54; border-color: #cbc1cb; }
+@media(hover:hover) and (pointer:fine){.pc-search-overlay__header > button:hover { background: #f7f3f7; color: #532c54; border-color: #cbc1cb; }}
 .pc-search-overlay__header > button:active { transform: scale(.96); }
 .pc-search-overlay__header > button svg { width: 18px; height: 18px; }
 
@@ -244,7 +244,7 @@
   white-space: nowrap;
   transition: background-color 160ms ease, transform 150ms cubic-bezier(.2,.8,.2,1);
 }
-.pc-search-overlay__footer a:hover { background: #501e51; }
+@media(hover:hover) and (pointer:fine){.pc-search-overlay__footer a:hover { background: #501e51; }}
 .pc-search-overlay__footer a:active { transform: scale(.98); }
 .pc-search-overlay__footer a svg { width: 14px; }
 

@@ -108,7 +108,7 @@
 .dorinha-pro__book,
 .dorinha-pro__book:first-child,
 .dorinha-pro__book:nth-child(2) { grid-column: span 1 !important; border: 1px solid var(--de-line) !important; border-radius: 9px !important; background: var(--de-paper) !important; box-shadow: none !important; }
-.dorinha-pro__book:hover { transform: none !important; border-color: var(--pc-color-muted) !important; box-shadow: 0 8px 22px rgba(58, 37, 48, .055) !important; }
+@media(hover:hover) and (pointer:fine){.dorinha-pro__book:hover { transform: none !important; border-color: var(--pc-color-muted) !important; box-shadow: 0 8px 22px rgba(58, 37, 48, .055) !important; }}
 .dorinha-pro__cover,
 .dorinha-pro__book:first-child .dorinha-pro__cover,
 .dorinha-pro__book:nth-child(2) .dorinha-pro__cover { min-height: 265px !important; height: 265px !important; background: var(--pc-color-border) !important; }

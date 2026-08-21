@@ -31,7 +31,7 @@
 :where(.orders-page,.customer-orders,.mercadopago-callback,.public-service-page) :where(button,a[class*="button"],a[class*="action"]):active{transform:scale(.97)}
 
 @media (hover:hover) and (pointer:fine){
-  .scpm-page .scpm-card:hover,.scpm-page .scpm-variant:hover{transform:none;box-shadow:0 9px 24px rgba(38,19,37,.07)}
+  @media(hover:hover) and (pointer:fine){.scpm-page .scpm-card:hover,.scpm-page .scpm-variant:hover{transform:none;box-shadow:0 9px 24px rgba(38,19,37,.07)}}
   :where(.establishments-page,.establishments-marketplace,.public-establishment,.public-store,.fremix-page,.merchant-online-store) :where(article,[class*="card"],[class*="store"]):hover{transform:none}
   :where(main,header,footer,nav) :where(button,a.button,a[class*="button"],a[class*="cta"],a[class*="action"]):hover{transform:none}
 }

@@ -8,7 +8,7 @@
   position: fixed;
   inset: 0;
   z-index: 60;
-  background: rgba(14, 24, 32, .18);
+  background: rgba(14,24,32, .18);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   animation: hp-scrim-in .22s var(--ease) both;
@@ -20,8 +20,8 @@
 }
 
 /* ============ BARRA EM DESTAQUE ============ */
-/* O hero sobe de camada para a barra ficar acima do véu; o resto da página
-   permanece atrás e desfocado. */
+/* O hero sobe de camada para a barra ficar acima do véu; o restante continua
+   visível e nítido para preservar contexto durante a pesquisa. */
 .hp-hero.is-searching { z-index: 70; }
 
 .hp-hero.is-searching .hp-hero__copy {
@@ -29,8 +29,7 @@
   z-index: 2;
 }
 
-/* O que não é a busca recua enquanto se digita — continua legível, mas para
-   de disputar atenção com os resultados. */
+/* O conteúdo secundário recua apenas pela opacidade, sem qualquer desfoque. */
 .hp-hero.is-searching .hp-eyebrow,
 .hp-hero.is-searching h1,
 .hp-hero.is-searching .hp-hero__copy > p,
@@ -216,4 +215,55 @@
 @media (prefers-reduced-motion: reduce) {
   .hp-search-scrim, .hp-search-results { animation: none; }
   .hp-hero.is-searching .hp-search { transform: none; }
+}
+
+/* ============ CABEÇALHO COM 5 SERVIÇOS ============ */
+/* O menu principal ganhou a Cesta Inteligente — cinco links em vez de quatro
+   precisam de um pouco menos de espaço entre eles para não apertar a marca. */
+@media (min-width: 981px) {
+  .hp-header nav { gap: 19px; }
+}
+
+/* ============ CONTATO E DESENVOLVEDOR NO RODAPÉ ============ */
+/* O rodapé das páginas internas foi removido (só a homepage mantém rodapé,
+   por pedido explícito), e ele era o único lugar com esses dois atalhos —
+   e-mail oficial de contato e a ficha do projeto/desenvolvedor. Reaparecem
+   aqui, no único rodapé que resta. */
+.hp-footer__panel-triggers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.hp-footer__panel-triggers button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, .82);
+  font-size: 11px;
+  cursor: pointer;
+  transition: border-color .16s ease, color .16s ease;
+}
+
+@media(hover:hover) and (pointer:fine){.hp-footer__panel-triggers button:hover { border-color: #f0a33a; color: #f0a33a; }}
+.hp-footer__panel-triggers svg { width: 13px; height: 13px; }
+
+/* Mantém a rolagem da homepage sem exibir a barra vertical. */
+html.hp-hide-page-scrollbar,
+body.hp-hide-page-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html.hp-hide-page-scrollbar::-webkit-scrollbar,
+body.hp-hide-page-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
